@@ -22,7 +22,7 @@ class CatalogView(ListView):
             queryset = queryset.filter(
                 Q(sizes__name__in=size_names) & Q(
                     sizes__clothingitemsize__available=True)
-            )
+            ).distinct()
 
         if min_price:
             queryset = queryset.filter(price__gte=min_price)
@@ -44,7 +44,7 @@ class CatalogView(ListView):
         return context
 
 
-class ClothingItemDetail(DetailView):
+class ClothingItemDetailView(DetailView):
     model = ClothingItem
     template_name = 'main/product/detail.html'
     context_object_name = 'clothing_item'
