@@ -49,7 +49,7 @@ p {
 .container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 40px 40px;
 }
 
 .header {
@@ -183,7 +183,7 @@ textarea {
 }
 
 .category-name {
-    max-width: 200px;
+    width: 100px;
 }
 
 .category-len {
