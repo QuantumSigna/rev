@@ -22,15 +22,15 @@
       <div class="header-logo">
         <img src="{% static 'img/rev.png' %}" alt="logo" />
       </div>
-      <div class="search">
-        <form action="" id="search-form" class="search_form" style="display: none;">
+      {% comment %} <div class="search">
+        <form action="" id="search-form" class="search_form d-flex" style="display: none;">
           <input type="text" name="q" class="form_input" placeholder="Search" />
           <button type="submit" class="btnforsearch"></button>
         </form>
-      </div>
+      </div> {% endcomment %}
       <div class="header-nav d-flex gap-4">
         <a href="#" class="h-profile"><img src="{% static 'img/profile.png' %}" alt="profile" /></a>
-        <a href="#" class="h-profile"><img src="{% static 'img/cart.png' %}" alt="profile" /></a>
+        <a href="#" class="h-profile"><img src="{% static 'img/cart.png' %}" alt="cart" /></a>
         <div class="forsearch">
           <a href="#" id="toggle-search" class="toggle-search"><img src="{% static 'img/search.png' %}" alt="search" /></a>
           <div class="search-popup" id="search-popup" style="display: none;">
