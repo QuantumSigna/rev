@@ -26,7 +26,7 @@ class UserLoginForm(AuthenticationForm):
         fields = ('email', 'password')
 
 
-class UserProfile(forms.ModelForm):
+class UserProfileForm(forms.ModelForm):
     class Meta:
         model = User
         fields = [
